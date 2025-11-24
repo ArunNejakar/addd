@@ -4,12 +4,11 @@ def add(a, b):
     return a + b
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
+    if len(sys.argv) == 3:  
         x = int(sys.argv[1])
         y = int(sys.argv[2])
-    else:
-        x =10
+    else:  
+        x = 10
         y = 20
-        print("sum", add(x, y))
-        
-        
+
+    print("sum", add(x, y))
